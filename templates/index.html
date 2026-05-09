@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini RAG Assistant</title>
+</head>
+<body>
+
+<h2>Upload PDF</h2>
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="pdf">
+    <button type="submit">Upload</button>
+</form>
+
+<hr>
+
+<h2>Ask Question</h2>
+<form method="POST">
+    <input type="text" name="question" placeholder="Enter your question">
+    <button type="submit">Ask</button>
+</form>
+
+<hr>
+
+<h3>Answer:</h3>
+<pre>{{ answer }}</pre>
+
+</body>
+</html>
